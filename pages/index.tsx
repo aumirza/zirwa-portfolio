@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import ProjectGoalsSection from "../components/project-goals-section";
+import ProjectGoalsSection from "../public/project-goals-section";
 import ConclusionSection from "../components/conclusion-section";
 import HeroSection from "../components/hero-section";
 import AboutSection from "../components/about-section";
@@ -15,24 +15,20 @@ import ProductFeaturesSection from "../components/product-features";
 
 const Home: NextPage = () => {
   return (
-    <main className="flex flex-col items-center my-5 mx-auto bg-white text-gray-400 ">
-      <div className="w-11/12 flex flex-col gap-10">
-        <HeroSection />
-        <AboutSection />
-        <ProjectGoalsSection />
-        <ProjectTimelineSection />
-        <DesignProcessSection />
-        <UserFlowSection />
-        <LoFidelitySection />
-        <HiFidelitySection />
-        <AccessibilitySection />
-        <StyleGuideSection />
-        <VisualDesignSection />
-      </div>
+    <main className="flex flex-col items-center my-5 mx-auto bg-white text-gray-400 gap-10">
+      <HeroSection />
+      <AboutSection />
+      <ProjectGoalsSection />
+      <ProjectTimelineSection />
+      <DesignProcessSection />
+      <UserFlowSection />
+      <LoFidelitySection />
+      <HiFidelitySection />
+      <AccessibilitySection />
+      <StyleGuideSection />
+      <VisualDesignSection />
       <ProductFeaturesSection />
-      <div className="w-11/12">
-        <ConclusionSection />
-      </div>
+      <ConclusionSection />
     </main>
   );
 };
