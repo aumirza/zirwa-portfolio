@@ -3,7 +3,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const VisualDesignSection: NextPage = () => {
   return (
-    <div className="w-full  text-21xl text-gray-300 py-10">
+    <div className="md:w-11/12 text-21xl text-gray-300 py-10">
       <div className="flex flex-col box-border items-center justify-center gap-5">
         <ScrollAnimation
           className="w-full"

@@ -18,7 +18,7 @@ const UserFlowSection = () => {
           animateIn="animate__fadeInUp"
           animateOnce={true}
         >
-          <img className="w-96" alt="" src="flow.png" />
+          <img className="w-11/12 max-w-4xl" alt="" src="flow.png" />
           <div className="text-base font-semibold text-gray-100 ">
             User flow of the website, to have an idea about how the user is
             going to interact on the website

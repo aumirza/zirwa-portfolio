@@ -3,7 +3,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const AccessibilitySection: NextPage = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row items-center justify-center ">
+    <div className="w-11/12 flex flex-col md:flex-row items-center justify-center ">
       <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
         <div className="flex flex-col items-center">
           <div className="">

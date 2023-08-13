@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="flex flex-col px-5 items-center justify-start">
         <ScrollAnimation animateIn="animate__headShake" animateOnce={true}>
           <img
-            className="h-[18rem] md:h-[22rem] object-cover"
+            className="h-[18rem] md:h-[26rem] object-cover"
             alt=""
             src="/play1-1@2x.png"
           />
@@ -19,7 +19,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-start justify-start gap-1 text-lgi text-dimgray-500">
+      <div className="md:w-1/2 flex flex-col items-start justify-start gap-1 text-lgi text-dimgray-500">
         <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
           <div className="font-medium">
             Figma Prototype | Web Design | Web Development

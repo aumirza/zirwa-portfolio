@@ -13,7 +13,7 @@ const ArtArchiveSection: NextPage = () => {
           <img className="w-8/12" src="/explore.png" alt="" />
         </div>
         <div>
-          <img className="w-full" src="/explorebg.png" alt="" />
+          <img className="w-full max-w-5xl" src="/explorebg.png" alt="" />
         </div>
       </div>
     </div>

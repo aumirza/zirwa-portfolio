@@ -41,7 +41,7 @@ const HiFidelitySection: NextPage = () => {
             </ScrollAnimation>
           </div>
         </div>
-        <img className="w-full" alt="" src="/prototypes.gif" />
+        <img className="w-full max-w-4xl" alt="" src="/prototypes.gif" />
       </div>
     </div>
   );

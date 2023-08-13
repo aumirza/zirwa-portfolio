@@ -26,12 +26,12 @@ const ProjectGoalsSection = () => {
           </ScrollAnimation>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-5  justify-between  text-dimgray-400">
+        <div className="flex flex-col md:flex-row gap-5  justify-between  text-dimgray-400">
           <div className="flex flex-col md:w-1/2 gap-2">
             <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
               <div>
                 <b className="text-15xl lg:text-21xl">
-                  <p className="m-0">{`Play is `}</p>
+                  <p className="m-0">Play is </p>
                   <p className="m-0">important</p>
                 </b>
               </div>
@@ -78,7 +78,8 @@ const ProjectGoalsSection = () => {
       <div className="py-10 md:py-0 md:h-screen bg-dimgray-300 flex flex-col items-center w-full justify-center">
         <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
           <img
-            className="h-[20rem] md:h-[32rem] lg:h-[35rem] object-cover z-[0]"
+            // className="h-[20rem] md:h-[35rem] lg:h-[35rem] object-cover z-[0]"
+            className="w-11/12 md:w-6/12 max-w-4xl"
             alt=""
             src="/paly-1@2x.png"
           />

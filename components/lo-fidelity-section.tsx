@@ -4,8 +4,12 @@ const LoFidelitySection = () => {
   return (
     <div className="w-full flex flex-col items-center">
       <div className="flex flex-col-reverse md:flex-row md:items-end justify-start py-10 gap-10">
-        <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-          <div className="px-5">
+        <ScrollAnimation
+          className="flex justify-end"
+          animateIn="animate__fadeInLeft"
+          animateOnce={true}
+        >
+          <div className="w-10/12">
             Lo-fi prototypes can be created rapidly and involve simple materials
             like paper, sketches, or digital wireframes, which allows designers
             to iterate and test ideas without investing significant time or
@@ -24,14 +28,18 @@ const LoFidelitySection = () => {
       </div>
       <div className="">
         <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-          <img className="w-full object-cover" alt="" src="/lofid.png" />
+          <img
+            className="w-full max-w-5xl object-cover"
+            alt=""
+            src="/lofid.png"
+          />
         </ScrollAnimation>
       </div>
       <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
         <div className="flex flex-col items-center justify-start gap-2">
           <div className="flex flex-col p-2.5 items-start justify-start">
             <img
-              className="w-full object-cover"
+              className="w-full max-w-5xl object-cover"
               alt=""
               src="/screen-shot-20230516-at-641-1@2x.png"
             />

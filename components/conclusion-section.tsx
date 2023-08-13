@@ -2,17 +2,17 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const ConclusionSection = () => {
   return (
-    <div className="max-w-4xl flex  py-10 items-center  justify-between text-gray-300 font-inter">
-      <div className="flex flex-col justify-center">
-        <div className="flex flex-row items-end justify-start gap-2">
-          <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-            <div className="relative font-black text-3xl md:text-4xl">
+    <div className="flex  items-center  justify-center text-gray-300 font-inter">
+      <div className="w-11/12 flex flex-col justify-between">
+        <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
+          <div className="flex items-end justify-start gap-2">
+            <div className="relative font-black text-end text-3xl md:text-4xl">
               Conclusion
             </div>
             <div className="bg-goldenrod w-28 h-2" />
-          </ScrollAnimation>
-        </div>
-        <div className="flex  flex-col md:flex-row items-center justify-between gap-5">
+          </div>
+        </ScrollAnimation>
+        <div className="flex  flex-col md:flex-row items-center justify-between gap-2">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
             <div className="text-sm lg:text-base">
               By adopting a playful mindset, individuals are encouraged to break
