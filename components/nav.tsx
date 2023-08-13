@@ -2,22 +2,58 @@ import Link from "next/link";
 
 import { useState } from "react";
 
-const NavItem = ({ text, link }: { text: string; link: string }) => {
+const NavItem = ({
+  text,
+  link,
+  subNav,
+}: {
+  text: string;
+  link: string;
+  subNav?: any;
+}) => {
   return (
-    <Link className="text-xl" href={link}>
-      <b>{text}</b>
-    </Link>
+    <div className="flex gap-3 md:gap-1 md:items-end">
+      <Link className="text-xl" href={link}>
+        <b>{text}</b>
+      </Link>
+      {subNav && (
+        <div className="relative group">
+          <div className="flex flex-col md:flex-row justify-center md:items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-5 h-5"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+          <div className="md:absolute hidden group-hover:flex w-48 flex-col md:bg-white md:shadow-sm md:rounded-md gap-2 p-5">
+            {subNav.map((item: any) => {
+              return (
+                <div
+                  className={
+                    subNav.length > 1 ? "border-b-2 border-slate-600 pb-2" : ""
+                  }
+                  key={item.text}
+                >
+                  <Link key={item.text} href={item.link}>
+                    {item.text}
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
   );
-  // return (
-  //   <div className="flex flex-row items-center justify-end">
-  //     <div className="flex-1 relative h-[31px]">
-  //       <b className="absolute top-[0%] left-[0%]">{`Work `}</b>
-  //     </div>
-  //     <div className="relative w-[13px] h-[31px] text-black">
-  //       <b className=" [transform:_rotate(-180deg)] [transform-origin:0_0]">^</b>
-  //     </div>
-  //   </div>
-  // );
 };
 
 const NavItems = [
@@ -26,12 +62,26 @@ const NavItems = [
     link: "/",
   },
   {
-    text: "About",
-    link: "/about",
-  },
-  {
     text: "Work",
     link: "/work",
+    subNav: [
+      {
+        text: "Ui/Ux Design",
+        link: "/ui-ux",
+      },
+      {
+        text: "Print Design",
+        link: "/print-design",
+      },
+      {
+        text: "Motion Graphics",
+        link: "/motion-graphics",
+      },
+    ],
+  },
+  {
+    text: "About",
+    link: "/about",
   },
   {
     text: "Contact",
