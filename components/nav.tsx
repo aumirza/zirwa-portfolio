@@ -11,13 +11,32 @@ const NavItem = ({
   link: string;
   subNav?: any;
 }) => {
-  return (
-    <div className="flex gap-3 md:gap-1 md:items-end">
-      <Link className="text-xl" href={link}>
+  const NavLink = ({
+    text,
+    link,
+    className,
+  }: {
+    text: string;
+    link: string;
+    className?: string;
+  }) => {
+    return (
+      <Link
+        className={
+          "text-white md:text-dimgray-600 no-underline border-b-2 hover:border-dimgray-100 pb-2 " +
+          className
+        }
+        href={link}
+      >
         <b>{text}</b>
       </Link>
+    );
+  };
+  return (
+    <div className="flex gap-3 md:gap-1 md:items-center group">
+      <NavLink className="text-xl" text={text} link={link} />
       {subNav && (
-        <div className="relative group">
+        <div className="relative ">
           <div className="flex flex-col md:flex-row justify-center md:items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,9 +62,7 @@ const NavItem = ({
                   }
                   key={item.text}
                 >
-                  <Link key={item.text} href={item.link}>
-                    {item.text}
-                  </Link>
+                  <NavLink text={item.text} link={item.link} />
                 </div>
               );
             })}
@@ -125,7 +142,7 @@ export const Nav = () => {
 
       <div
         className={
-          "md:hidden text-white fixed h-full w-full top-0 left-0 transform transition-all  duration-700 " +
+          "md:hidden text-white fixed h-full w-full top-0 left-0 z-20 transform transition-all  duration-700 " +
           (showNav ? "translate-x-0" : "-translate-x-full")
         }
       >
