@@ -17,7 +17,7 @@ const UserFlowSection1 = () => {
         </ScrollAnimation>
       </div>
       <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-        <img className="w-96" src="/flow1.png" alt="" />
+        <img className="w-80 md:w-96" src="/flow1.png" alt="" />
       </ScrollAnimation>
     </Container>
   );
