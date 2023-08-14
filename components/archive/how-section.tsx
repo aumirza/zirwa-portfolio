@@ -1,8 +1,9 @@
 import ScrollAnimation from "react-animate-on-scroll";
+import Container from "../container";
 
 const HowSection = () => {
   return (
-    <div className="flex flex-col items-center ">
+    <Container className="flex flex-col items-center ">
       <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
         <div className="relative text-xl font-bold text-gray-1200">
           How this works
@@ -64,7 +65,7 @@ const HowSection = () => {
           </ScrollAnimation>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

@@ -32,7 +32,7 @@ const MobileCenteredDesignSection = () => {
             </div>
           </ScrollAnimation>
           <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-            <img className="w-96" src="/centered.png" alt="" />
+            <img className="w-80 md:w-96" src="/centered.png" alt="" />
           </ScrollAnimation>
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-5 md:gap-20 md:-mt-10">
