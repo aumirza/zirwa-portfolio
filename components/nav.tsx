@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { useState } from "react";
+import ActiveLink from "./active-link";
 
 const NavItem = ({
   text,
@@ -21,15 +22,16 @@ const NavItem = ({
     className?: string;
   }) => {
     return (
-      <Link
+      <ActiveLink
         className={
-          "text-white md:text-dimgray-600 no-underline border-b-2 hover:border-dimgray-100 pb-2 " +
+          "text-white md:text-dimgray-600 no-underline hover:border-solid border-b-4 hover:border-dimgray-100 " +
           className
         }
+        activeClassName="border-solid border-dimgray-100"
         href={link}
       >
         <b>{text}</b>
-      </Link>
+      </ActiveLink>
     );
   };
   return (
