@@ -1,9 +1,9 @@
-import type { NextPage } from "next";
 import ScrollAnimation from "react-animate-on-scroll";
+import Container from "./container";
 
-const VisualDesignSection: NextPage = () => {
+const VisualDesignSection = () => {
   return (
-    <div className="md:w-11/12 text-21xl text-gray-300 py-10">
+    <Container className="text-21xl text-gray-300 py-10">
       <div className="flex flex-col box-border items-center justify-center gap-5">
         <ScrollAnimation
           className="w-full"
@@ -24,7 +24,7 @@ const VisualDesignSection: NextPage = () => {
           </ScrollAnimation>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

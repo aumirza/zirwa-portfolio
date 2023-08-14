@@ -1,15 +1,21 @@
-import type { NextPage } from "next";
+import ScrollAnimation from "react-animate-on-scroll";
+import Container from "../container";
 
-const HiFidelitySection1: NextPage = () => {
+const HiFidelitySection1 = () => {
   return (
-    <div className="flex flex-col py-[25px] px-0 box-border items-center gap-5">
-      <div className="text-3xl font-semibold">Hi-fidelity prototypes</div>
-      <img
-        className="w-full object-cover"
-        alt=""
-        src="/project-3-mockup-1@2x.png"
-      />
-    </div>
+    <Container className="flex flex-col py-[25px] px-0 box-border items-center gap-5">
+      <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
+        <div className="text-3xl font-semibold">Hi-fidelity prototypes</div>
+      </ScrollAnimation>
+
+      <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
+        <img
+          className="w-full object-cover"
+          alt=""
+          src="/project-3-mockup-1@2x.png"
+        />
+      </ScrollAnimation>
+    </Container>
   );
 };
 

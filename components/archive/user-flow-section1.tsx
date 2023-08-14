@@ -1,10 +1,11 @@
-import type { NextPage } from "next";
+import Container from "../container";
+import ScrollAnimation from "react-animate-on-scroll";
 
-const UserFlowSection1: NextPage = () => {
+const UserFlowSection1 = () => {
   return (
-    <div className="flex justify-center  text-saddlebrown-200">
-      <div className="w-11/12 flex flex-col md:flex-row justify-center gap-20">
-        <div className="w-1/2 flex flex-col justify-center gap-5">
+    <Container className="flex flex-col md:flex-row justify-center gap-20  text-saddlebrown-200">
+      <div className="md:w-1/2 flex flex-col justify-center gap-5">
+        <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
           <div className="font-extrabold text-2xl">User Flow</div>
           <div className=" text-black inline-block">
             To create an immersive art exploration experience that goes beyond a
@@ -13,12 +14,12 @@ const UserFlowSection1: NextPage = () => {
             and the artwork but also gain valuable insights into the specific
             techniques and materials utilized in the creation of that artwork.
           </div>
-        </div>
-        <div className="">
-          <img className="w-96" src="/flow1.png" alt="" />
-        </div>
+        </ScrollAnimation>
       </div>
-    </div>
+      <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
+        <img className="w-96" src="/flow1.png" alt="" />
+      </ScrollAnimation>
+    </Container>
   );
 };
 

@@ -1,8 +1,9 @@
 import ScrollAnimation from "react-animate-on-scroll";
+import Container from "./container";
 
 const StyleGuideSection = () => {
   return (
-    <div className="w-full md:w-11/12 flex flex-col items-center justify-center ">
+    <Container className="flex flex-col items-center justify-center ">
       <div className="py-10 flex flex-col-reverse md:flex-row items-start justify-start gap-10">
         <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
           <div className="">
@@ -25,7 +26,7 @@ const StyleGuideSection = () => {
       <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
         <img className="w-full" alt="" src="/style-guide.png" />
       </ScrollAnimation>
-    </div>
+    </Container>
   );
 };
 

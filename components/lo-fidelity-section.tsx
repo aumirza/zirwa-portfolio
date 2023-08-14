@@ -1,15 +1,16 @@
 import ScrollAnimation from "react-animate-on-scroll";
+import Container from "./container";
 
 const LoFidelitySection = () => {
   return (
-    <div className="w-full flex flex-col items-center">
+    <Container className="flex flex-col items-center">
       <div className="flex flex-col-reverse md:flex-row md:items-end justify-start py-10 gap-10">
         <ScrollAnimation
           className="flex justify-end"
           animateIn="animate__fadeInLeft"
           animateOnce={true}
         >
-          <div className="w-10/12">
+          <div className="">
             Lo-fi prototypes can be created rapidly and involve simple materials
             like paper, sketches, or digital wireframes, which allows designers
             to iterate and test ideas without investing significant time or
@@ -49,7 +50,7 @@ const LoFidelitySection = () => {
           </div>
         </div>
       </ScrollAnimation>
-    </div>
+    </Container>
   );
 };
 

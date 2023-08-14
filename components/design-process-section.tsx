@@ -1,5 +1,5 @@
-import type { NextPage } from "next";
 import ScrollAnimation from "react-animate-on-scroll";
+import Container from "./container";
 
 const DesignCard = ({ title, image }: { title: string; image: string }) => {
   return (
@@ -18,9 +18,9 @@ const DesignCard = ({ title, image }: { title: string; image: string }) => {
   );
 };
 
-const DesignProcessSection: NextPage = () => {
+const DesignProcessSection = () => {
   return (
-    <div className="w-full bg-gainsboro flex flex-col justify-center items-center text-dimgray-500 font-inter gap-5">
+    <Container className="bg-gainsboro flex flex-col justify-center items-center text-dimgray-500 font-inter gap-5">
       <ScrollAnimation
         className="w-full flex justify-end"
         animateIn="animate__fadeInRight"
@@ -55,7 +55,7 @@ const DesignProcessSection: NextPage = () => {
           <DesignCard title="User Testing" image="/group-156.svg" />
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

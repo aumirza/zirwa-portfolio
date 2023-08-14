@@ -1,5 +1,6 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
+import Container from "./container";
 
 interface TimelineCardProps {
   week: number[];
@@ -17,11 +18,13 @@ const TimelineCard = ({
   hideArrow,
 }: TimelineCardProps) => {
   return (
-    <ScrollAnimation
-      animateIn={"animate__fadeIn" + (odd ? "Up" : "Down")}
-      animateOnce={true}
-    >
-      <div className="relative  flex justify-center w-48 lg:w-56 h-56 lg:h-64">
+    <div className="relative  flex justify-center w-48 lg:w-56 h-56 lg:h-64">
+      <ScrollAnimation
+        animateIn={"animate__fadeIn" + (odd ? "Up" : "Down")}
+        animateOnce={true}
+        delay={100}
+        className="z-20"
+      >
         <div className="p-10  z-20 h-full w-full flex flex-col gap-2 box-border items-center justify-center  bg-[url(/timeline-card-bg.png)] bg-cover bg-no-repeat bg-[top]">
           <div className="mt-5 font-semibold">Week {week.join(", ")}</div>
           <b className="text-dimgray-800 text-sm">{title}</b>
@@ -37,25 +40,29 @@ const TimelineCard = ({
             </ul>
           </div>
         </div>
-        <div
+      </ScrollAnimation>
+
+      <div
+        className={
+          "hidden absolute md:block bg-dimgray-100 z-10 h-40 w-3 " +
+          (odd ? "top-1/2" : "bottom-1/2")
+        }
+      />
+      {!hideArrow ? (
+        <ScrollAnimation
+          animateIn={"animate__fadeIn" + (odd ? "Up" : "Down")}
+          animateOnce={true}
           className={
-            "hidden absolute md:block bg-dimgray-100 z-10 h-40 w-3 " +
-            (odd ? "top-1/2" : "bottom-1/2")
+            "absolute md:hidden top-1/2 z-10 " +
+            (odd ? "-left-16" : "-right-16 -scale-x-100")
           }
-        />
-        {!hideArrow ? (
-          <div
-            className={
-              "absolute md:hidden top-1/2 " +
-              (odd ? " -left-16" : " -right-16 -scale-x-100")
-            }
-          >
-            <div className="bg-dimgray-100 z-10 h-3 w-16"></div>
-            <div className="bg-dimgray-100 z-10 h-40 w-3"></div>
-          </div>
-        ) : null}
-      </div>
-    </ScrollAnimation>
+          //  -scale-x-100
+        >
+          <div className="bg-dimgray-100 z-10 h-3 w-16"></div>
+          <div className="bg-dimgray-100 z-10 h-40 w-3"></div>
+        </ScrollAnimation>
+      ) : null}
+    </div>
   );
 };
 
@@ -98,22 +105,56 @@ const timelineData = [
 
 const ProjectTimelineSection = () => {
   return (
-    <div className="w-full relative  flex flex-col justify-center  gap-10 text-dimgray-500">
-      <ScrollAnimation
-        className="flex justify-center"
-        animateIn="animate__fadeInLeft"
-        animateOnce={true}
-      >
-        <div className="w-11/12 flex flex-row items-end justify-start gap-2 font-bold">
-          <div className="font-black inline-block text-3xl  md:text-3xl lg:text-5xl ">
-            Project Timeline
+    <Container
+      fluid
+      className="relative  flex flex-col justify-center  gap-10 text-dimgray-500"
+    >
+      <Container className="mx-auto">
+        <ScrollAnimation
+          className="flex"
+          animateIn="animate__fadeInLeft"
+          animateOnce={true}
+        >
+          <div className="flex items-end justify-start gap-2 font-bold">
+            <div className="font-black text-3xl  md:text-3xl lg:text-5xl ">
+              Project Timeline
+            </div>
+            <div className="bg-goldenrod w-36 md:w-48 h-1.5" />
           </div>
-          <div className="bg-goldenrod w-36 md:w-48 h-1.5" />
-        </div>
-      </ScrollAnimation>
+        </ScrollAnimation>
 
+        <div className="flex flex-row-reverse justify-center md:hidden">
+          <div className="flex flex-col gap-48 -ml-10">
+            {
+              // only odd
+              timelineData
+                .filter((_, index) => index % 2 === 0)
+                .map((data, index) => {
+                  return <TimelineCard key={index} {...data} odd={true} />;
+                })
+            }
+          </div>
+          <div className="flex flex-col mt-52 gap-48">
+            {
+              // only even
+              timelineData
+                .filter((_, index) => index % 2 === 1)
+                .map((data, index) => {
+                  return (
+                    <TimelineCard
+                      hideArrow={index === 2}
+                      key={index}
+                      {...data}
+                      odd={false}
+                    />
+                  );
+                })
+            }
+          </div>
+        </div>
+      </Container>
       <div className="relative hidden md:flex justify-center">
-        <div className="w-11/12 grid grid-cols-10 grid-rows-2 gap-y-24 lg:gap-y-16">
+        <Container className="grid grid-cols-10 grid-rows-2 gap-y-24 lg:gap-y-16">
           {timelineData.map((data, index) => {
             return (
               <>
@@ -133,44 +174,14 @@ const ProjectTimelineSection = () => {
               </>
             );
           })}
-        </div>
+        </Container>
         <ScrollAnimation
           className="absolute top-1/2 bg-dimgray-100 h-3 w-full "
           animateIn="animate__fadeIn"
           animateOnce={true}
         ></ScrollAnimation>
       </div>
-
-      <div className="flex flex-row-reverse justify-center md:hidden">
-        <div className="flex flex-col gap-48 -ml-10">
-          {
-            // only odd
-            timelineData
-              .filter((_, index) => index % 2 === 0)
-              .map((data, index) => {
-                return <TimelineCard key={index} {...data} odd={true} />;
-              })
-          }
-        </div>
-        <div className="flex flex-col mt-52 gap-48">
-          {
-            // only even
-            timelineData
-              .filter((_, index) => index % 2 === 1)
-              .map((data, index) => {
-                return (
-                  <TimelineCard
-                    hideArrow={index === 2}
-                    key={index}
-                    {...data}
-                    odd={false}
-                  />
-                );
-              })
-          }
-        </div>
-      </div>
-    </div>
+    </Container>
   );
 };
 

@@ -1,11 +1,10 @@
 import ScrollAnimation from "react-animate-on-scroll";
-import Play2 from "../asset/paly-1@2x.png";
-import Image from "next/image";
+import Container from "../components/container";
 
 const ProjectGoalsSection = () => {
   return (
-    <div className="w-full flex flex-col items-center text-dimgray-500">
-      <div className="w-11/12 py-10 flex flex-col items-start justify-center gap-5">
+    <Container fluid className="flex flex-col items-center text-dimgray-500">
+      <Container className="py-10 flex flex-col items-start justify-center gap-5">
         <div className="flex flex-col items-start justify-start gap-3">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
             <div className="flex flex-row items-end justify-start gap-2">
@@ -16,7 +15,7 @@ const ProjectGoalsSection = () => {
             </div>
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
+          <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
             <div className="text-black inline-block">
               The primary goal is to inspire individuals to embrace their
               creative potential and explore innovative thinking. By providing
@@ -73,19 +72,22 @@ const ProjectGoalsSection = () => {
             </ScrollAnimation>
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="py-10 md:py-0 md:h-screen bg-dimgray-300 flex flex-col items-center w-full justify-center">
-        <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
+      <div className="py-10 md:py-0 md:h-screen bg-dimgray-300 w-full justify-center">
+        <ScrollAnimation
+          className="flex flex-col items-center"
+          animateIn="animate__fadeIn"
+          animateOnce={true}
+        >
           <img
-            // className="h-[20rem] md:h-[35rem] lg:h-[35rem] object-cover z-[0]"
-            className="w-11/12 md:w-6/12 max-w-4xl"
+            className="w-11/12 md:w-6/12 max-w-3xl"
             alt=""
             src="/paly-1@2x.png"
           />
         </ScrollAnimation>
       </div>
-    </div>
+    </Container>
   );
 };
 

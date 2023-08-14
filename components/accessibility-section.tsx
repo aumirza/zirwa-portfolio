@@ -1,9 +1,9 @@
-import type { NextPage } from "next";
 import ScrollAnimation from "react-animate-on-scroll";
+import Container from "./container";
 
-const AccessibilitySection: NextPage = () => {
+const AccessibilitySection = () => {
   return (
-    <div className="w-11/12 flex flex-col md:flex-row items-center justify-center ">
+    <Container className="flex flex-col md:flex-row items-center justify-center ">
       <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
         <div className="flex flex-col items-center">
           <div className="">
@@ -40,7 +40,7 @@ const AccessibilitySection: NextPage = () => {
           </div>
         </div>
       </ScrollAnimation>
-    </div>
+    </Container>
   );
 };
 
