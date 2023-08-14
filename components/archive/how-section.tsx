@@ -9,7 +9,7 @@ const HowSection = () => {
           How this works
         </div>
       </ScrollAnimation>
-      <div className="w-11/12 flex flex-col items-center justify-center mt-5 md:mt-0 gap-5 md:gap-0">
+      <div className="flex flex-col items-center justify-center mt-5 md:mt-0 gap-5 md:gap-0">
         <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
             <div className="flex flex-col gap-2">
@@ -53,7 +53,7 @@ const HowSection = () => {
               <div className="font-extrabold inline-block">
                 Provide accurate and concise information
               </div>
-              <div className="text-lgi leading-[130%] text-black inline-block">
+              <div className="">
                 By offering concise and accurate information accompanied by
                 visuals, users can better understand the content and navigate
                 through the webpage with ease. This approach ensures that users
