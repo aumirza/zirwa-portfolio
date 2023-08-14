@@ -49,18 +49,20 @@ const TimelineCard = ({
         }
       />
       {!hideArrow ? (
-        <ScrollAnimation
-          animateIn={"animate__fadeIn" + (odd ? "Up" : "Down")}
-          animateOnce={true}
+        <div
           className={
             "absolute md:hidden top-1/2 z-10 " +
             (odd ? "-left-16" : "-right-16 -scale-x-100")
           }
-          //  -scale-x-100
         >
-          <div className="bg-dimgray-100 z-10 h-3 w-16"></div>
-          <div className="bg-dimgray-100 z-10 h-40 w-3"></div>
-        </ScrollAnimation>
+          <ScrollAnimation
+            animateIn={"animate__fadeIn" + (odd ? "Up" : "Down")}
+            animateOnce={true}
+          >
+            <div className="bg-dimgray-100 z-10 h-3 w-16"></div>
+            <div className="bg-dimgray-100 z-10 h-40 w-3"></div>
+          </ScrollAnimation>
+        </div>
       ) : null}
     </div>
   );
