@@ -3,16 +3,20 @@ import Container from "../container";
 
 const HowSection = () => {
   return (
-    <Container className="flex flex-col items-center ">
+    <Container fluid className="flex flex-col items-center ">
       <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
         <div className="relative text-xl font-bold text-gray-1200">
           How this works
         </div>
       </ScrollAnimation>
-      <div className="flex flex-col items-center justify-center mt-5 md:mt-0 gap-5 md:gap-0">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
-          <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-            <div className="flex flex-col gap-2">
+      <Container className="flex flex-col items-center justify-center mt-5 md:mt-0 gap-5 md:gap-0">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5 md:gap-10">
+          <div className="md:w-1/3">
+            <ScrollAnimation
+              className="flex flex-col gap-2"
+              animateIn="animate__fadeInLeft"
+              animateOnce={true}
+            >
               <div className="font-extrabold text-saddlebrown-200">
                 Scan the QR code{" "}
               </div>
@@ -29,8 +33,8 @@ const HowSection = () => {
                   leads to the webpage for that artwork.
                 </p>
               </div>
-            </div>
-          </ScrollAnimation>
+            </ScrollAnimation>
+          </div>
 
           <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
             <img
@@ -40,7 +44,7 @@ const HowSection = () => {
             />
           </ScrollAnimation>
         </div>
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-5 md:gap-10">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-5 md:gap-10">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
             <img
               className="object-cover w-96"
@@ -48,8 +52,12 @@ const HowSection = () => {
               src="/second-project-1@2x.png"
             />
           </ScrollAnimation>
-          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-            <div className="flex flex-col gap-2">
+          <div className="w-11/12 md:w-1/3">
+            <ScrollAnimation
+              className="flex flex-col gap-2"
+              animateIn="animate__fadeInRight"
+              animateOnce={true}
+            >
               <div className="font-extrabold inline-block">
                 Provide accurate and concise information
               </div>
@@ -61,10 +69,10 @@ const HowSection = () => {
                 deeper into the provided information, resulting in a more
                 engaging and satisfying user experience.
               </div>
-            </div>
-          </ScrollAnimation>
+            </ScrollAnimation>
+          </div>
         </div>
-      </div>
+      </Container>
     </Container>
   );
 };

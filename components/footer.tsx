@@ -1,3 +1,5 @@
+import Container from "./container";
+
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -14,7 +16,7 @@ const Footer = () => {
           src="/group-1801.svg"
         />
       </div>
-      <div className="flex w-11/12 h-full justify-between items-center">
+      <Container className="flex h-full gap-10 justify-between items-center">
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-1">
             <img
@@ -23,7 +25,7 @@ const Footer = () => {
               src="/vector1.svg"
             />
 
-            <div className="text-lg md:text-xl font-medium text-gray-600 text-center">
+            <div className="text-lg md:text-xl font-medium text-gray-600 text-center whitespace-nowrap">
               2023 Zirwa Tariq
             </div>
           </div>
@@ -47,7 +49,7 @@ const Footer = () => {
           <div className="">Download PDF Resume</div>
           <div className="">Contact me</div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };

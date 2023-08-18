@@ -36,8 +36,12 @@ const WhatSection = () => {
             </div>
           </ScrollAnimation>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
+        <div className="grid grid-cols-2 md:grid-cols-6  gap-2">
+          <ScrollAnimation
+            className="col-span-2"
+            animateIn="animate__fadeInRight"
+            animateOnce={true}
+          >
             <WhatCard title="Project Statement">
               <p>
                 In today's art world, there is a significant lack of accessible
@@ -47,8 +51,11 @@ const WhatSection = () => {
               </p>
             </WhatCard>
           </ScrollAnimation>
-
-          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
+          <ScrollAnimation
+            className="col-span-2"
+            animateIn="animate__fadeInRight"
+            animateOnce={true}
+          >
             <WhatCard title="Project Objectives">
               <ul>
                 <li>
@@ -62,11 +69,13 @@ const WhatSection = () => {
               </ul>
             </WhatCard>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-            <WhatCard
-              className="row-start-3 md:row-start-1 md:col-start-3"
-              title="My Role"
-            >
+
+          <ScrollAnimation
+            className="row-start-5 md:row-start-1 md:col-start-5 md:col-span-2"
+            animateIn="animate__fadeInRight"
+            animateOnce={true}
+          >
+            <WhatCard title="My Role">
               <ul>
                 <li>Research</li>
                 <li>Designer</li>
@@ -75,8 +84,11 @@ const WhatSection = () => {
               </ul>
             </WhatCard>
           </ScrollAnimation>
-
-          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
+          <ScrollAnimation
+            className="col-span-2"
+            animateIn="animate__fadeInRight"
+            animateOnce={true}
+          >
             <WhatCard title="Project Goals">
               <p>
                 To create an immersive art exploration experience that goes
@@ -88,8 +100,11 @@ const WhatSection = () => {
               </p>
             </WhatCard>
           </ScrollAnimation>
-
-          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
+          <ScrollAnimation
+            className="col-span-2"
+            animateIn="animate__fadeInRight"
+            animateOnce={true}
+          >
             <WhatCard title="Target Audience">
               <p className="m-0">
                 <span className="font-medium font-case-study-2-h2">
@@ -105,8 +120,11 @@ const WhatSection = () => {
               </p>
             </WhatCard>
           </ScrollAnimation>
-
-          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
+          <ScrollAnimation
+            className="md:col-span-2"
+            animateIn="animate__fadeInRight"
+            animateOnce={true}
+          >
             <WhatCard title="Tools">
               <ul>
                 <li>Figma </li>

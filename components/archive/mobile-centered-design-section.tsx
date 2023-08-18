@@ -18,9 +18,13 @@ const MobileCenteredDesignSection = () => {
       </ScrollAnimation>
 
       <Container className="flex flex-col text-saddlebrown-200 mt-5 md:mt-0 gap-5 md:gap-0">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20">
-          <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-            <div className="flex flex-col gap-2">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5 md:gap-20">
+          <div className="md:w-1/3">
+            <ScrollAnimation
+              className="flex flex-col gap-2"
+              animateIn="animate__fadeInLeft"
+              animateOnce={true}
+            >
               <div className="font-extrabold">Mobile Centered design </div>
               <div className="text-black">
                 Integrating a mobile adaptive website with QR code scanning
@@ -29,13 +33,13 @@ const MobileCenteredDesignSection = () => {
                 engagement without the need for manual typing or searching,
                 bridges the gap between offline and online experiences.
               </div>
-            </div>
-          </ScrollAnimation>
+            </ScrollAnimation>
+          </div>
           <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
             <img className="w-80 md:w-96" src="/centered.png" alt="" />
           </ScrollAnimation>
         </div>
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-5 md:gap-20 md:-mt-10">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-5 md:gap-20 md:-mt-10">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
             <img
               className="object-cover w-80"
@@ -44,8 +48,12 @@ const MobileCenteredDesignSection = () => {
             />
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-            <div className="flex flex-col gap-2">
+          <div className="md:w-1/3">
+            <ScrollAnimation
+              className="flex flex-col gap-2"
+              animateIn="animate__fadeInRight"
+              animateOnce={true}
+            >
               <div className="font-extrabold">Read more option </div>
               <div className="text-black">
                 The "Read More" option in websites enhances the user experience
@@ -54,12 +62,16 @@ const MobileCenteredDesignSection = () => {
                 mobile devices, giving users control over their browsing
                 experience, and encouraging interaction and engagement.
               </div>
-            </div>
-          </ScrollAnimation>
+            </ScrollAnimation>
+          </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-20 md:-mt-10">
-          <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-            <div className="flex flex-col gap-2">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5 md:gap-20 md:-mt-10">
+          <div className="md:w-1/3">
+            <ScrollAnimation
+              className="flex flex-col gap-2"
+              animateIn="animate__fadeInLeft"
+              animateOnce={true}
+            >
               <div className="font-extrabold">Dark Mode</div>
               <div className="">
                 Incorporating dark mode into the web experience enhances the
@@ -67,8 +79,8 @@ const MobileCenteredDesignSection = () => {
                 option of customized user experience. For those who prefer to
                 have such experiences.
               </div>
-            </div>
-          </ScrollAnimation>
+            </ScrollAnimation>
+          </div>
           <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
             <img
               className="object-cover w-[20rem]"

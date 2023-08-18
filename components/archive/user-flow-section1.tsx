@@ -3,8 +3,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const UserFlowSection1 = () => {
   return (
-    <Container className="flex flex-col md:flex-row justify-center gap-20  text-saddlebrown-200">
-      <div className="md:w-1/2 flex flex-col justify-center gap-5">
+    <Container className="flex flex-col md:flex-row justify-between  gap-20  text-saddlebrown-200">
+      <div className="md:w-1/3 flex flex-col gap-5">
         <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
           <div className="font-extrabold text-2xl">User Flow</div>
           <div className=" text-black inline-block">

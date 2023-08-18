@@ -13,7 +13,7 @@ const DesignStrategyCard = ({
     <div className="text-center">
       <ScrollAnimation animateIn="animate__fadeInDown" animateOnce={true}>
         <img
-          className="w-[4.5rem] h-[4.5rem] md:h-28 md:w-28"
+          className="w-[4.5rem] h-[4.5rem] md:h-32 md:w-32"
           alt=""
           src={image}
         />
@@ -50,7 +50,7 @@ const DesignStrategySection: NextPage = () => {
             </ScrollAnimation>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex flex-wrap justify-center gap-5 md:gap-20">
           <DesignStrategyCard title="Empathize" image="/group-218.svg" />
           <DesignStrategyCard title="Define" image="/group-219.svg" />
           <DesignStrategyCard title="Ideate" image="/group-223.svg" />

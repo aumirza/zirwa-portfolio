@@ -1,8 +1,7 @@
-import type { NextPage } from "next";
 import Container from "../container";
 import ScrollAnimation from "react-animate-on-scroll";
 
-const ArtArchiveSection: NextPage = () => {
+const ArtArchiveSection = () => {
   return (
     <Container
       fluid
@@ -14,13 +13,17 @@ const ArtArchiveSection: NextPage = () => {
       </div>
 
       <div className="relative flex justify-center items-center">
-        <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-          <div className="top-0 flex justify-center items-center  absolute">
-            <img className="w-8/12" src="/explore.png" alt="" />
-          </div>
-        </ScrollAnimation>
+        <div className="top-0 absolute">
+          <ScrollAnimation
+            className="flex justify-center items-center "
+            animateIn="animate__fadeIn"
+            animateOnce={true}
+          >
+            <img className="w-8/12 md:w-[85%]" src="/explore.png" alt="" />
+          </ScrollAnimation>
+        </div>
         <div>
-          <img className="w-full max-w-5xl" src="/explorebg.png" alt="" />
+          <img className="w-full" src="/explorebg.png" alt="" />
         </div>
       </div>
     </Container>

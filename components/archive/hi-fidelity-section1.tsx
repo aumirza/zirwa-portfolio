@@ -3,10 +3,15 @@ import Container from "../container";
 
 const HiFidelitySection1 = () => {
   return (
-    <Container className="flex flex-col py-[25px] px-0 box-border items-center gap-5">
-      <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-        <div className="text-3xl font-semibold">Hi-fidelity prototypes</div>
-      </ScrollAnimation>
+    <Container
+      fluid
+      className="flex flex-col py-[25px] px-0 box-border items-center gap-5"
+    >
+      <Container className="flex justify-center">
+        <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
+          <div className="text-3xl font-semibold">Hi-fidelity prototypes</div>
+        </ScrollAnimation>
+      </Container>
 
       <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
         <img
