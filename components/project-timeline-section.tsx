@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Container from "./container";
+import TitleLine from "./title-line";
 
 interface TimelineCardProps {
   week: number[];
@@ -59,8 +60,8 @@ const TimelineCard = ({
             animateIn={"animate__fadeIn" + (odd ? "Up" : "Down")}
             animateOnce={true}
           >
-            <div className="bg-dimgray-100 z-10 h-3 w-16"></div>
-            <div className="bg-dimgray-100 z-10 h-40 w-3"></div>
+            <div className="bg-dimgray-100 z-10 h-1.5 w-16"></div>
+            <div className="bg-dimgray-100 z-10 h-40 w-1.5"></div>
           </ScrollAnimation>
         </div>
       ) : null}
@@ -117,11 +118,12 @@ const ProjectTimelineSection = () => {
           animateIn="animate__fadeInLeft"
           animateOnce={true}
         >
-          <div className="flex items-end justify-start gap-2 font-bold">
-            <div className="font-black text-3xl  md:text-3xl lg:text-5xl ">
-              Project Timeline
+          <div className="flex items-end gap-2 font-bold">
+            <div className="flex flex-col md:flex-row font-black text-3xl  md:text-3xl lg:text-5xl">
+              <span>Project </span>
+              <span>Timeline</span>
             </div>
-            <div className="bg-goldenrod w-36 md:w-48 h-1.5" />
+            <TitleLine />
           </div>
         </ScrollAnimation>
 

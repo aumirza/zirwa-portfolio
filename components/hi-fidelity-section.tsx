@@ -1,5 +1,6 @@
 import ScrollAnimation from "react-animate-on-scroll";
 import Container from "./container";
+import TitleLine from "./title-line";
 
 const HiFidelitySection = () => {
   return (
@@ -8,7 +9,7 @@ const HiFidelitySection = () => {
         <div className="hidden md:col-start-1 md:col-end-7 md:row-start-1  sm:flex flex-col items-center justify-start">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
             <img
-              className="relative mt-24  h-56 lg:h-72 object-cover"
+              className="relative  h-56 lg:h-72 object-cover"
               alt=""
               src="/final01-1@2x.png"
             />
@@ -17,14 +18,20 @@ const HiFidelitySection = () => {
             </div>
           </ScrollAnimation>
         </div>
-        <div className="col-span-12 gap-5 md:col-span-6 md:col-start-6 md:col-end-12 md:row-start-1 flex flex-col items-start justify-start  text-gray-300">
-          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
+        <div className="col-span-12 md:col-span-6 md:col-start-6 md:col-end-12 md:row-start-1   text-gray-300">
+          <ScrollAnimation
+            className="flex flex-col gap-5"
+            animateIn="animate__fadeInRight"
+            animateOnce={true}
+          >
             <div className="flex flex-row items-end justify-start gap-2">
-              <div className="font-black inline-block ">
-                <div className="text-3xl md:text-4xl">Hi-fidelity</div>
-                <div className="text-4xl md:text-5xl">Prototypes</div>
+              <div className="flex flex-col md:flex-row md:gap-1 font-black">
+                <div className="text-3xl md:text-4xl whitespace-nowrap">
+                  Hi-fidelity
+                </div>
+                <div className="text-4xl ">Prototypes</div>
               </div>
-              <div className="bg-goldenrod w-28 h-2" />
+              <TitleLine />
             </div>
             <div className="text-sm lg:text-base text-black">
               Hi-fi provides a more polished and realistic representation of the

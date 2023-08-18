@@ -1,5 +1,6 @@
 import ScrollAnimation from "react-animate-on-scroll";
 import Container from "./container";
+import TitleLine from "./title-line";
 
 const VisualDesignSection = () => {
   return (
@@ -11,10 +12,11 @@ const VisualDesignSection = () => {
           animateOnce={true}
         >
           <div className="flex flex-row items-end justify-start gap-1">
-            <div className="font-semibold text-3xl md:text-4xl">
-              Visual Design
+            <div className="flex flex-col md:flex-row md:gap-2 font-semibold text-3xl md:text-4xl">
+              <span>Visual</span>
+              <span>Design</span>
             </div>
-            <div className="bg-goldenrod w-28 h-2" />
+            <TitleLine />
           </div>
         </ScrollAnimation>
 

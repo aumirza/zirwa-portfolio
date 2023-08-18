@@ -1,9 +1,10 @@
 import ScrollAnimation from "react-animate-on-scroll";
 import Container from "./container";
+import TitleLine from "./title-line";
 
 const HeroSection = () => {
   return (
-    <Container className="md:min-h-[calc(100vh-3.5rem)] py-10 md:py-0 bg-gainsboro  flex flex-col md:flex-row  items-center justify-center gap-5  font-inter ">
+    <Container className="md:min-h-[calc(100vh-3.5rem)]  flex flex-col md:flex-row-reverse justify-between md:items-center">
       <div className="flex flex-col px-5 items-center justify-start">
         <ScrollAnimation animateIn="animate__headShake" animateOnce={true}>
           <img
@@ -19,7 +20,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="md:w-1/2 flex flex-col items-start justify-start gap-4 md:gap-2 text-lgi text-dimgray-500">
+      <div className="md:w-1/2 flex flex-col gap-4 md:gap-2 text-dimgray-500">
         <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
           <div className="font-medium">
             Figma Prototype | Web Design | Web Development
@@ -37,7 +38,7 @@ const HeroSection = () => {
               to Creativity
             </span>
           </div>
-          <div className="bg-goldenrod w-28 h-1.5" />
+          <TitleLine />
         </ScrollAnimation>
 
         <ScrollAnimation

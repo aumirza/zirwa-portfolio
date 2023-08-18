@@ -1,16 +1,17 @@
 import ScrollAnimation from "react-animate-on-scroll";
 import Container from "./container";
+import TitleLine from "./title-line";
 
 const LoFidelitySection = () => {
   return (
-    <Container className="flex flex-col items-center">
-      <div className="flex flex-col-reverse md:flex-row md:items-end justify-start py-10 gap-10">
+    <Container fluid className="flex flex-col items-center">
+      <Container className="flex flex-col-reverse md:flex-row  py-10 gap-10">
         <ScrollAnimation
           className="flex justify-end"
           animateIn="animate__fadeInLeft"
           animateOnce={true}
         >
-          <div className="">
+          <div className="max-w-xl text-lg">
             Lo-fi prototypes can be created rapidly and involve simple materials
             like paper, sketches, or digital wireframes, which allows designers
             to iterate and test ideas without investing significant time or
@@ -19,37 +20,36 @@ const LoFidelitySection = () => {
         </ScrollAnimation>
         <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
           <div className="flex items-end justify-start gap-3 font-semibold text-gray-300">
-            <div className="font-black inline-block ">
-              <div className="text-3xl md:text-4xl">Lo-fidelity</div>
-              <div className="text-4xl md:text-5xl">Prototypes</div>
+            <div className="flex flex-col md:gap-1 md:flex-row font-black">
+              <div className="text-3xl md:text-4xl whitespace-nowrap">
+                <span>Lo-fidelity</span>
+              </div>
+              <div className="text-4xl">Prototypes</div>
             </div>
-            <div className="bg-goldenrod w-28 h-2" />
+            <TitleLine />
           </div>
         </ScrollAnimation>
-      </div>
-      <div className="">
+      </Container>
+      <Container fluid>
         <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-          <img
-            className="w-full max-w-5xl object-cover"
-            alt=""
-            src="/lofid.png"
-          />
+          <img className="w-full object-cover" alt="" src="/lofid.png" />
         </ScrollAnimation>
-      </div>
-      <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-        <div className="flex flex-col items-center justify-start gap-2">
-          <div className="flex flex-col p-2.5 items-start justify-start">
-            <img
-              className="w-full max-w-5xl object-cover"
-              alt=""
-              src="/screen-shot-20230516-at-641-1@2x.png"
-            />
+        <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
+          <div className="flex flex-col items-center justify-start gap-2">
+            <div className="flex flex-col p-2.5 items-start justify-start">
+              <img
+                className="w-full  object-cover"
+                alt=""
+                src="/screen-shot-20230516-at-641-1@2x.png"
+              />
+            </div>
+            <div className="text-base text-gray-100">
+              Exploration of different interactions on paper and digital
+              interface
+            </div>
           </div>
-          <div className="text-base text-gray-100">
-            Exploration of different interactions on paper and digital interface
-          </div>
-        </div>
-      </ScrollAnimation>
+        </ScrollAnimation>
+      </Container>
     </Container>
   );
 };

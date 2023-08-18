@@ -1,9 +1,11 @@
 import ScrollAnimation from "react-animate-on-scroll";
+import Container from "./container";
+import TitleLine from "./title-line";
 
 const Card = ({ title, children }: { title: string; children: any }) => {
   return (
     <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-      <div className="rounded-smi text-lgi box-border w-36 h-36 md:w-40 md:h-40  lg:w-44 lg:h-44  flex flex-col  items-center py-2 md:py-5 border-[2px] border-solid border-gray-400">
+      <div className="rounded-smi text-lgi box-border w-40 h-40 flex flex-col  items-center py-2 md:py-5 border-[2px] border-solid border-gray-400">
         <b className="">{title}</b>
         <div className="font-medium w-full md:p-1 text-sm lg:text-base">
           {children}
@@ -15,9 +17,9 @@ const Card = ({ title, children }: { title: string; children: any }) => {
 
 const AboutSection = () => {
   return (
-    <div className="bg-bisque flex justify-center items-center h-screen w-full ">
-      <div className="w-11/12 flex flex-col md:flex-row items-center justify-between gap-5 ">
-        <div className="grid grid-cols-2 grid-rows-2 gap-2">
+    <Container className="flex justify-center items-center">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-5 ">
+        <div className="grid grid-cols-2 grid-rows-2 gap-5 md:gap-8">
           <Card title="Role">
             <ul>
               <li>Designer</li>
@@ -53,7 +55,7 @@ const AboutSection = () => {
                   the Project
                 </p>
               </div>
-              <div className="bg-goldenrod w-28 h-1.5" />
+              <TitleLine />
             </div>
           </ScrollAnimation>
           <div className="relative md:text-lgi text-black">
@@ -70,7 +72,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

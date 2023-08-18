@@ -1,6 +1,4 @@
-import type { NextPage } from "next";
-
-const Footer: NextPage = () => {
+const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -18,36 +16,36 @@ const Footer: NextPage = () => {
       </div>
       <div className="flex w-11/12 h-full justify-between items-center">
         <div className="flex flex-col gap-2">
-          <div className="flex flex-col font-medium">
-            <span>Let’s connect and help</span>
-            <span>each other grow</span>
-          </div>
+          <div className="flex items-center gap-1">
+            <img
+              className="h-4 md:h-5 max-w-full overflow-hidden max-h-full"
+              alt=""
+              src="/vector1.svg"
+            />
 
+            <div className="text-lg md:text-xl font-medium text-gray-600 text-center">
+              2023 Zirwa Tariq
+            </div>
+          </div>
           <div className="">
             <img
-              className="h-8 max-w-full overflow-hidden max-h-full"
+              className="h-5 md:h-8 max-w-full overflow-hidden max-h-full"
               alt=""
               src="/icons2.svg"
             />
           </div>
 
-          <div className="flex">
-            <img
-              className="h-5 max-w-full overflow-hidden max-h-full"
-              alt=""
-              src="/vector1.svg"
-            />
+          <div className="md:hidden text-lg">Lets Connect</div>
 
-            <div className="text-xl font-medium text-gray-600 text-center">
-              2023 Zirwa Tariq
-            </div>
+          <div className="hidden md:flex flex-col font-medium">
+            <span>Let’s connect and help</span>
+            <span>each other grow</span>
           </div>
         </div>
-        <div className="hidden md:flex flex-col">
-          <div className="text-xl text-black">
-            <div className="">Download PDF Resume</div>
-            <div className="">Contact me</div>
-          </div>
+        <div className="flex flex-col text-lg md:text-xl text-black">
+          <div className="md:hidden leading-3">Click here to</div>
+          <div className="">Download PDF Resume</div>
+          <div className="">Contact me</div>
         </div>
       </div>
     </footer>

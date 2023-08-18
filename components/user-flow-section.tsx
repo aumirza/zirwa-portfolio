@@ -1,18 +1,24 @@
-import Image from "next/image";
 import ScrollAnimation from "react-animate-on-scroll";
+import Container from "./container";
+import TitleLine from "./title-line";
 
 const UserFlowSection = () => {
   return (
-    <div className="w-11/12 flex flex-col items-center justify-center gap-5">
-      <div className="w-full flex flex-row items-end justify-start gap-2">
-        <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-          <div className="text-3xl md:text-4xl lg:text-5xl font-semibold text-dimgray-500 ">
-            User Flow
+    <Container className="flex flex-col items-center justify-center gap-5">
+      <ScrollAnimation
+        className="w-full"
+        animateIn="animate__fadeInLeft"
+        animateOnce={true}
+      >
+        <div className="flex flex-row items-end justify-start gap-2">
+          <div className="flex flex-col md:flex-row md:gap-2 text-3xl md:text-4xl lg:text-5xl font-semibold text-dimgray-500 ">
+            <span>User</span>
+            <span>Flow</span>
           </div>
-          <div className="bg-goldenrod w-28 h-2" />
-        </ScrollAnimation>
-      </div>
-      <div className="w-full">
+          <TitleLine />
+        </div>
+      </ScrollAnimation>
+      <Container fluid>
         <ScrollAnimation
           className=" flex flex-col items-center "
           animateIn="animate__fadeInUp"
@@ -24,8 +30,8 @@ const UserFlowSection = () => {
             going to interact on the website
           </div>
         </ScrollAnimation>
-      </div>
-    </div>
+      </Container>
+    </Container>
   );
 };
 

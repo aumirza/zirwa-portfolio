@@ -2,7 +2,7 @@ import { FC, PropsWithChildren } from "react";
 
 const screenSize = {
   lg: "max-w-5xl",
-  xl: "max-w-6xl",
+  xl: "max-w-8xl",
 };
 
 const Container: FC<
@@ -11,9 +11,9 @@ const Container: FC<
   return (
     <div
       className={
-        (!fluid ? "w-11/12" : "w-full") +
+        (!fluid ? "w-11/12 lg:w-10/12" : "w-full") +
         " " +
-        (maxW ? screenSize[maxW] : screenSize["lg"]) +
+        (maxW ? screenSize[maxW] : screenSize["xl"]) +
         " " +
         className
       }

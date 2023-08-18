@@ -1,5 +1,6 @@
 import ScrollAnimation from "react-animate-on-scroll";
 import Container from "../components/container";
+import TitleLine from "../components/title-line";
 
 const ProjectGoalsSection = () => {
   return (
@@ -7,11 +8,12 @@ const ProjectGoalsSection = () => {
       <Container className="py-10 flex flex-col items-start justify-center gap-5">
         <div className="flex flex-col items-start justify-start gap-3">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-            <div className="flex flex-row items-end justify-start gap-2">
-              <div className="text-4xl md:text-5xl font-bold">
-                Project Goals
+            <div className="flex items-end justify-start gap-2">
+              <div className="flex flex-col md:flex-row text-4xl md:text-5xl font-bold">
+                <span>Project</span>
+                <span>Goals</span>
               </div>
-              <div className="bg-goldenrod w-32 md:w-48 h-1.5" />
+              <TitleLine />
             </div>
           </ScrollAnimation>
 
@@ -25,7 +27,7 @@ const ProjectGoalsSection = () => {
           </ScrollAnimation>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-5  justify-between  text-dimgray-400">
+        <div className="flex flex-col md:flex-row  gap-5 md:gap-20  justify-between  text-dimgray-400">
           <div className="flex flex-col md:w-1/2 gap-2">
             <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
               <div>
@@ -74,19 +76,18 @@ const ProjectGoalsSection = () => {
         </div>
       </Container>
 
-      <div className="py-10 md:py-0 md:h-screen bg-dimgray-300 w-full justify-center">
+      <Container
+        fluid
+        className="py-10 md:py-0 bg-dimgray-300 w-full justify-center"
+      >
         <ScrollAnimation
-          className="flex flex-col items-center"
+          className="flex justify-center"
           animateIn="animate__fadeIn"
           animateOnce={true}
         >
-          <img
-            className="w-11/12 md:w-6/12 max-w-3xl"
-            alt=""
-            src="/paly-1@2x.png"
-          />
+          <img className="w-10/12  object-cover" alt="" src="/paly-1@2x.png" />
         </ScrollAnimation>
-      </div>
+      </Container>
     </Container>
   );
 };

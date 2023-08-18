@@ -1,10 +1,14 @@
 import ScrollAnimation from "react-animate-on-scroll";
 import Container from "./container";
+import TitleLine from "./title-line";
 
 const StyleGuideSection = () => {
   return (
-    <Container className="flex flex-col items-center justify-center ">
-      <div className="py-10 flex flex-col-reverse md:flex-row items-start justify-start gap-10">
+    <Container
+      fluid
+      className="flex flex-col items-center justify-center gap-5"
+    >
+      <Container className="flex flex-col-reverse md:flex-row items-start justify-start gap-5 md:gap-28">
         <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
           <div className="">
             A style guide is a set of guidelines and standards that define the
@@ -16,16 +20,19 @@ const StyleGuideSection = () => {
         </ScrollAnimation>
         <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
           <div className="flex flex-row flex-grow items-end justify-start gap-2 text-21xl text-gray-300">
-            <div className="block whitespace-nowrap text-3xl md:text-4xl">
-              Style Guide
+            <div className="flex font-semibold md:gap-2 flex-col md:flex-row text-3xl md:text-4xl">
+              <span>Style </span>
+              <span>Guide</span>
             </div>
-            <div className="bg-goldenrod w-28 h-2" />
+            <TitleLine />
           </div>
         </ScrollAnimation>
-      </div>
-      <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
-        <img className="w-full" alt="" src="/style-guide.png" />
-      </ScrollAnimation>
+      </Container>
+      <Container fluid>
+        <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
+          <img className="w-full" alt="" src="/style-guide.png" />
+        </ScrollAnimation>
+      </Container>
     </Container>
   );
 };

@@ -1,9 +1,10 @@
 import ScrollAnimation from "react-animate-on-scroll";
 import Container from "./container";
+import TitleLine from "./title-line";
 
 const AccessibilitySection = () => {
   return (
-    <Container className="flex flex-col md:flex-row items-center justify-center ">
+    <Container className="flex flex-col-reverse md:flex-row gap-5 md:gap-20">
       <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
         <div className="flex flex-col items-center">
           <div className="">
@@ -24,12 +25,12 @@ const AccessibilitySection = () => {
       </ScrollAnimation>
 
       <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-        <div className="flex flex-col items-start justify-start gap-10">
+        <div className="flex flex-col items-start justify-start gap-5">
           <div className="flex flex-row items-end justify-start gap-2">
             <div className="text-3xl md:text-4xl   font-semibold">
-              Accessibility{" "}
+              Accessibility
             </div>
-            <div className="bg-goldenrod  w-24 md:w-28 h-2" />
+            <TitleLine />
           </div>
           <div className="text-sm md:text-base">
             Accessibility includes not only the outward depiction but also what
