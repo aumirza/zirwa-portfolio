@@ -119,7 +119,7 @@ const ProjectTimelineSection = () => {
           animateOnce={true}
         >
           <div className="flex items-end gap-2 font-bold">
-            <div className="flex flex-col md:flex-row font-black text-3xl  md:text-3xl lg:text-5xl">
+            <div className="flex flex-col md:gap-2 md:flex-row font-black text-3xl  md:text-3xl lg:text-5xl">
               <span>Project </span>
               <span>Timeline</span>
             </div>

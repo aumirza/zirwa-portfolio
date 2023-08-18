@@ -27,8 +27,8 @@ const DesignProcessSection = () => {
         animateIn="animate__fadeInRight"
         animateOnce={true}
       >
-        <div className="flex md:justify-end items-end gap-3">
-          <div className="flex flex-col md:flex-row text-3xl md:text-4xl lg:text-5xl font-semibold">
+        <div className="flex md:justify-end items-end gap-2">
+          <div className="flex flex-col md:gap-2 md:flex-row text-3xl md:text-4xl lg:text-5xl font-semibold">
             <span>Design </span>
             <span>Process</span>
           </div>

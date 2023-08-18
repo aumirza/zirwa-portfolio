@@ -9,7 +9,7 @@ const ProjectGoalsSection = () => {
         <div className="flex flex-col items-start justify-start gap-3">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
             <div className="flex items-end justify-start gap-2">
-              <div className="flex flex-col md:flex-row text-4xl md:text-5xl font-bold">
+              <div className="flex flex-col md:flex-row text-4xl md:text-5xl font-bold  md:gap-2">
                 <span>Project</span>
                 <span>Goals</span>
               </div>

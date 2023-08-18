@@ -5,11 +5,9 @@ import TitleLine from "./title-line";
 const Card = ({ title, children }: { title: string; children: any }) => {
   return (
     <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-      <div className="rounded-smi text-lg box-border w-36 h-36  lg:w-40 lg:h-40 flex flex-col  items-center py-2 md:py-5 border-[2px] border-solid border-gray-400">
-        <b className="">{title}</b>
-        <div className="font-medium w-full md:p-1 text-sm lg:text-base">
-          {children}
-        </div>
+      <div className="rounded-smi  box-border w-36 h-36  lg:w-40 lg:h-40 flex flex-col  items-center py-2 md:py-5 border-[2px] border-solid border-gray-400">
+        <b className="text-lg">{title}</b>
+        <div className="font-medium w-full md:p-1 text-sm ">{children}</div>
       </div>
     </ScrollAnimation>
   );
