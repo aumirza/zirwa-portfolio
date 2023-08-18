@@ -4,8 +4,8 @@ import TitleLine from "./title-line";
 
 const HeroSection = () => {
   return (
-    <Container className="md:min-h-[calc(100vh-3.5rem)]  flex flex-col md:flex-row-reverse justify-between md:items-center">
-      <div className="flex flex-col px-5 items-center justify-start">
+    <Container className="md:min-h-[calc(100vh-3.5rem)]  flex flex-col md:flex-row-reverse justify-between md:items-center gap-5">
+      <div className="flex flex-col px-5 items-center justify-center">
         <ScrollAnimation animateIn="animate__headShake" animateOnce={true}>
           <img
             className="h-[18rem] md:h-[26rem] object-cover"
@@ -13,11 +13,11 @@ const HeroSection = () => {
             src="/play1-1@2x.png"
           />
         </ScrollAnimation>
-        <div className="font-semibold text-base text-gray-100">
-          <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
+        <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
+          <div className="font-semibold text-base text-gray-100 text-center">
             Two mobiles with two different interaction screens from website
-          </ScrollAnimation>
-        </div>
+          </div>
+        </ScrollAnimation>
       </div>
 
       <div className="md:w-1/2 flex flex-col gap-4 md:gap-2 text-dimgray-500">
