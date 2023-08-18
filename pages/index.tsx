@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import ProjectGoalsSection from "../public/project-goals-section";
+import ProjectGoalsSection from "../components/project-goals-section";
 import ConclusionSection from "../components/conclusion-section";
 import HeroSection from "../components/hero-section";
 import AboutSection from "../components/about-section";

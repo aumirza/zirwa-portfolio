@@ -1,6 +1,6 @@
 import ScrollAnimation from "react-animate-on-scroll";
-import Container from "../components/container";
-import TitleLine from "../components/title-line";
+import Container from "./container";
+import TitleLine from "./title-line";
 
 const ProjectGoalsSection = () => {
   return (
@@ -76,16 +76,17 @@ const ProjectGoalsSection = () => {
         </div>
       </Container>
 
-      <Container
-        fluid
-        className="py-10 md:py-0 bg-dimgray-300 w-full justify-center"
-      >
+      <Container fluid className="py-10 md:py-0 bg-dimgray-300 justify-center">
         <ScrollAnimation
           className="flex justify-center"
           animateIn="animate__fadeIn"
           animateOnce={true}
         >
-          <img className="w-10/12  object-cover" alt="" src="/paly-1@2x.png" />
+          <img
+            className="w-11/12 md:w-8/12 object-cover"
+            alt=""
+            src="/paly-1@2x.png"
+          />
         </ScrollAnimation>
       </Container>
     </Container>

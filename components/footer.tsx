@@ -16,7 +16,7 @@ const Footer = () => {
           src="/group-1801.svg"
         />
       </div>
-      <Container className="flex h-full gap-10 justify-between items-center">
+      <div className="w-11/12 flex h-full gap-10 justify-between items-center">
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-1">
             <img
@@ -49,7 +49,7 @@ const Footer = () => {
           <div className="">Download PDF Resume</div>
           <div className="">Contact me</div>
         </div>
-      </Container>
+      </div>
     </footer>
   );
 };
