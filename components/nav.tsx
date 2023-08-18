@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { useState } from "react";
 import ActiveLink from "./active-link";
 
@@ -46,7 +44,7 @@ const NavItem = ({
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-5 h-5"
+              className="w-5 h-5 text-white md:text-dimgray-600"
             >
               <path
                 strokeLinecap="round"

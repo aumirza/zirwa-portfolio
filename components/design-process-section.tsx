@@ -38,13 +38,15 @@ const DesignProcessSection = () => {
 
       <div className="items-center justify-center flex flex-col text-gray-500 gap-10">
         <div className="lg:w-9/12">
-          Starting with empathizing and try to solve a problem user is facing by
-          proper defining it and ideating the best possible solutions to create
-          the prototypes, Test the prototypes for user feedback so they can be
-          improved based on the feedback of the users. Once the prototypes are
-          ready, develop the website by working on semantic structure and
-          accessibility, validate the codes properly in terms of structure and
-          accessibility, and test again for final results.
+          <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
+            Starting with empathizing and try to solve a problem user is facing
+            by proper defining it and ideating the best possible solutions to
+            create the prototypes, Test the prototypes for user feedback so they
+            can be improved based on the feedback of the users. Once the
+            prototypes are ready, develop the website by working on semantic
+            structure and accessibility, validate the codes properly in terms of
+            structure and accessibility, and test again for final results.
+          </ScrollAnimation>
         </div>
         <Container
           fluid

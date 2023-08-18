@@ -16,7 +16,7 @@ const Footer = () => {
           src="/group-1801.svg"
         />
       </div>
-      <div className="w-11/12 flex h-full gap-10 justify-between items-center">
+      <div className="w-11/12 text-gray-600  flex h-full gap-10 justify-between items-center">
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-1">
             <img
@@ -25,7 +25,7 @@ const Footer = () => {
               src="/vector1.svg"
             />
 
-            <div className="text-lg md:text-xl font-medium text-gray-600 text-center whitespace-nowrap">
+            <div className="text-lg md:text-xl font-medium text-center whitespace-nowrap">
               2023 Zirwa Tariq
             </div>
           </div>

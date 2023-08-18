@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="flex flex-col px-5 items-center justify-center">
         <ScrollAnimation animateIn="animate__headShake" animateOnce={true}>
           <img
-            className="h-[18rem] md:h-[26rem] object-cover"
+            className="h-[18rem] md:h-[26rem] lg:h-[30rem] object-cover"
             alt=""
             src="/play1-1@2x.png"
           />
