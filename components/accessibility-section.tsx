@@ -9,7 +9,7 @@ const AccessibilitySection = () => {
         <div className="flex flex-col items-center">
           <div className="">
             <img
-              className="h-[20rem] lg:h-[28rem] object-cover"
+              className="h-[18rem] md:h-[20rem] lg:h-[28rem] object-cover"
               alt=""
               src="/screen-shot-20230516-at-733-1@2x.png"
             />

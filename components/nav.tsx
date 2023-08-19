@@ -164,7 +164,7 @@ export const Nav = () => {
         ></div>
         <div
           className={
-            "bg-gray-300 h-full w-full z-20 flex justify-center items-center " +
+            "bg-slate-900 h-full w-full z-20 flex justify-center items-center " +
             (showNav
               ? "translate-x-0  duration-1000 ease-out"
               : "-translate-x-full duration-500 ease-in")

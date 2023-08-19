@@ -46,8 +46,16 @@ const Footer = () => {
         </div>
         <div className="flex flex-col text-lg md:text-xl text-black">
           <div className="md:hidden leading-3">Click here to</div>
-          <div className="">Download PDF Resume</div>
-          <div className="">Contact me</div>
+          <div className="">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Download PDF Resume
+            </a>
+          </div>
+          <div className="">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Contact me
+            </a>
+          </div>
         </div>
       </div>
     </footer>
