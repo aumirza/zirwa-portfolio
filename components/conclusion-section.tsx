@@ -31,7 +31,7 @@ const ConclusionSection = () => {
         <img
           className="w-full md:w-auto md:h-56 lg:h-72 object-cover z-[1]"
           alt=""
-          src="/animation-2@2x.png"
+          src="/conclusion.png"
         />
       </ScrollAnimation>
     </Container>

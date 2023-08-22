@@ -19,11 +19,11 @@ const ArtArchiveSection = () => {
             animateIn="animate__fadeIn"
             animateOnce={true}
           >
-            <img className="w-8/12 md:w-[85%]" src="/explore.png" alt="" />
+            <img className="w-[65vw]" src="/explore.png" alt="" />
           </ScrollAnimation>
         </div>
         <div>
-          <img className="w-full" src="/explorebg.png" alt="" />
+          <img className="w-[100vw]" src="/explorebg.png" alt="" />
         </div>
       </div>
     </Container>

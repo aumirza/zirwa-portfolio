@@ -3,7 +3,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const UserFlowSection1 = () => {
   return (
-    <Container className="flex flex-col md:flex-row justify-between  gap-20  text-saddlebrown-200">
+    <Container className="flex flex-col md:flex-row justify-between items-center  gap-20  text-saddlebrown-200">
       <div className="md:w-1/3 flex flex-col gap-5">
         <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
           <div className="font-extrabold text-2xl">User Flow</div>
@@ -17,7 +17,7 @@ const UserFlowSection1 = () => {
         </ScrollAnimation>
       </div>
       <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-        <img className="w-80 md:w-96" src="/flow1.png" alt="" />
+        <img className="w-80 md:w-[40vw]" src="/flow1.png" alt="" />
       </ScrollAnimation>
     </Container>
   );

@@ -37,16 +37,12 @@ const LoFidelitySection = () => {
         <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
           <div className="flex flex-col items-center justify-start gap-2">
             <div className="flex flex-col p-2.5 items-start justify-start">
-              <img
-                className="w-full  object-cover"
-                alt=""
-                src="/screen-shot-20230516-at-641-1@2x.png"
-              />
+              <img className="w-full  object-cover" alt="" src="/lo-fid2.png" />
             </div>
-            <div className="text-base text-gray-100">
+            <Container className="text-base text-gray-100 text-center">
               Exploration of different interactions on paper and digital
               interface
-            </div>
+            </Container>
           </div>
         </ScrollAnimation>
       </Container>

@@ -6,22 +6,7 @@ const AccessibilitySection = () => {
   return (
     <Container className="flex flex-col-reverse md:flex-row gap-5 md:gap-20">
       <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-        <div className="flex flex-col items-center">
-          <div className="">
-            <img
-              className="h-[18rem] md:h-[20rem] lg:h-[28rem] object-cover"
-              alt=""
-              src="/screen-shot-20230516-at-733-1@2x.png"
-            />
-          </div>
-          <div className="-mt-40 ml-44 lg:-mt-44 lg:ml-48">
-            <img
-              className="lg:h-80 h-52 object-cover"
-              alt=""
-              src="/screen-shot-20230516-at-745-1@2x.png"
-            />
-          </div>
-        </div>
+        <img className="w-[35vw]" alt="" src="/accessibility.png" />
       </ScrollAnimation>
 
       <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>

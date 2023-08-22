@@ -24,7 +24,9 @@ const WhatSection = () => {
       <div className="flex flex-col items-center justify-center gap-10">
         <div className="flex flex-col items-center justify-center md:justify-start gap-3">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-            <div className="text-4xl font-bold">What is Art Archive?</div>
+            <div className="text-3xl md:text-4xl font-bold">
+              What is Art Archive?
+            </div>
           </ScrollAnimation>
           <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
             <div className="text-lg leading-6  text-black md:text-center">
@@ -36,7 +38,7 @@ const WhatSection = () => {
             </div>
           </ScrollAnimation>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-6  gap-2">
+        <div className="grid grid-cols-2 md:grid-cols-5  gap-10 gap-x-20">
           <ScrollAnimation
             className="col-span-2"
             animateIn="animate__fadeInRight"
@@ -71,7 +73,7 @@ const WhatSection = () => {
           </ScrollAnimation>
 
           <ScrollAnimation
-            className="row-start-5 md:row-start-1 md:col-start-5 md:col-span-2"
+            className="row-start-5 md:row-start-1 md:col-start-5"
             animateIn="animate__fadeInRight"
             animateOnce={true}
           >
@@ -120,11 +122,7 @@ const WhatSection = () => {
               </p>
             </WhatCard>
           </ScrollAnimation>
-          <ScrollAnimation
-            className="md:col-span-2"
-            animateIn="animate__fadeInRight"
-            animateOnce={true}
-          >
+          <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
             <WhatCard title="Tools">
               <ul>
                 <li>Figma </li>

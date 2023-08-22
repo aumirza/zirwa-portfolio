@@ -36,16 +36,12 @@ const MobileCenteredDesignSection = () => {
             </ScrollAnimation>
           </div>
           <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-            <img className="w-80 md:w-96" src="/centered.png" alt="" />
+            <img className="w-full md:w-[33vw]" src="/centered.png" alt="" />
           </ScrollAnimation>
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-5 md:gap-20 md:-mt-10">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-            <img
-              className="object-cover w-80"
-              alt=""
-              src="/screenshot20230701at411-1@2x.png"
-            />
+            <img className="w-full md:w-[28vw]" alt="" src="/read-more.png" />
           </ScrollAnimation>
 
           <div className="md:w-1/3">
@@ -82,11 +78,7 @@ const MobileCenteredDesignSection = () => {
             </ScrollAnimation>
           </div>
           <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-            <img
-              className="object-cover w-[20rem]"
-              alt=""
-              src="/darkmode.png"
-            />
+            <img className="w-full md:w-[30vw]" alt="" src="/darkmode.png" />
           </ScrollAnimation>
         </div>
       </Container>

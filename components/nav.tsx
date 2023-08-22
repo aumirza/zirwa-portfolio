@@ -22,10 +22,10 @@ const NavItem = ({
     return (
       <ActiveLink
         className={
-          "text-white md:text-dimgray-600 no-underline hover:border-solid border-b-4 hover:border-dimgray-100 " +
+          "text-white md:text-dimgray-600 no-underline hover:border-solid border-b-4 hover:border-white md:hover:border-dimgray-100 " +
           className
         }
-        activeClassName="border-solid border-dimgray-100"
+        activeClassName="border-solid md:border-dimgray-100 border-white"
         href={link}
       >
         <b>{text}</b>
@@ -108,7 +108,7 @@ const NavItems = [
 
 const NavList = ({ className }: { className?: string }) => {
   return (
-    <div className={"flex flex-col md:flex-row gap-5 " + className}>
+    <div className={"flex flex-col md:flex-row gap-8 " + className}>
       {NavItems.map((item) => {
         return <NavItem key={item.text} {...item} />;
       })}
@@ -148,7 +148,7 @@ export const Nav = () => {
       >
         <div
           className={
-            "bg-goldenrod w-full h-full fixed left-0 top-0 " +
+            "w-full h-full fixed left-0 top-0 " +
             (showNav
               ? "translate-x-0  duration-500 ease-out"
               : "-translate-x-full  duration-1000 ease-in")
@@ -156,7 +156,7 @@ export const Nav = () => {
         ></div>
         <div
           className={
-            "bg-dimgray-300  w-full h-full fixed top-0 left-0 " +
+            "w-full h-full fixed top-0 left-0 " +
             (showNav
               ? "translate-x-0  duration-700 ease-out"
               : "-translate-x-full duration-700 ease-in")
@@ -164,7 +164,7 @@ export const Nav = () => {
         ></div>
         <div
           className={
-            "bg-slate-900 h-full w-full z-20 flex justify-center items-center " +
+            "bg-black h-full w-full z-20 flex justify-center items-center " +
             (showNav
               ? "translate-x-0  duration-1000 ease-out"
               : "-translate-x-full duration-500 ease-in")

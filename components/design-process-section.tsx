@@ -22,23 +22,9 @@ const DesignCard = ({ title, image }: { title: string; image: string }) => {
 const DesignProcessSection = () => {
   return (
     <Container className="bg-gainsboro flex flex-col justify-center items-center text-dimgray-500 font-inter gap-5">
-      <ScrollAnimation
-        className="w-full flex md:justify-end"
-        animateIn="animate__fadeInRight"
-        animateOnce={true}
-      >
-        <div className="flex md:justify-end items-end gap-2">
-          <div className="flex flex-col md:gap-2 md:flex-row text-3xl md:text-4xl lg:text-5xl font-semibold">
-            <span>Design </span>
-            <span>Process</span>
-          </div>
-          <TitleLine />
-        </div>
-      </ScrollAnimation>
-
-      <div className="items-center justify-center flex flex-col text-gray-500 gap-10">
-        <div className="lg:w-9/12">
-          <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
+      <div className="flex flex-col-reverse lg:flex-row items-start gap-10">
+        <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
+          <div>
             Starting with empathizing and try to solve a problem user is facing
             by proper defining it and ideating the best possible solutions to
             create the prototypes, Test the prototypes for user feedback so they
@@ -46,20 +32,36 @@ const DesignProcessSection = () => {
             prototypes are ready, develop the website by working on semantic
             structure and accessibility, validate the codes properly in terms of
             structure and accessibility, and test again for final results.
-          </ScrollAnimation>
-        </div>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation
+          className="w-full flex md:justify-end"
+          animateIn="animate__fadeInRight"
+          animateOnce={true}
+        >
+          <div className="flex md:justify-end items-end gap-2">
+            <div className="flex flex-col md:gap-2 md:flex-row text-3xl md:text-4xl lg:text-5xl font-semibold">
+              <span>Design </span>
+              <span>Process</span>
+            </div>
+            <TitleLine />
+          </div>
+        </ScrollAnimation>
+      </div>
+
+      <div className="items-center justify-center flex flex-col text-gray-500 gap-10">
         <Container
           fluid
-          className="flex flex-wrap gap-5 md:gap-10 lg:gap-20 justify-center"
+          className="flex flex-wrap gap-5 md:gap-10 lg:gap-28 justify-center"
         >
-          <DesignCard title="Empathize" image="/layer-11.svg" />
-          <DesignCard title="Define" image="/layer-12.svg" />
-          <DesignCard title="Ideate" image="/group-154.svg" />
-          <DesignCard title="Prototype" image="/group-155.svg" />
-          <DesignCard title="User Testing" image="/group-156.svg" />
-          <DesignCard title="Develop" image="/group-150.svg" />
-          <DesignCard title="Code Validation" image="/group-157.svg" />
-          <DesignCard title="User Testing" image="/group-156.svg" />
+          <DesignCard title="Empathize" image="/empathize.svg" />
+          <DesignCard title="Define" image="/define.svg" />
+          <DesignCard title="Ideate" image="/ideate.svg" />
+          <DesignCard title="Prototype" image="/prototype.svg" />
+          <DesignCard title="User Testing" image="/user-testing.svg" />
+          <DesignCard title="Develop" image="/develop.svg" />
+          <DesignCard title="Code Validation" image="/code-validation.svg" />
+          <DesignCard title="User Testing" image="/user-testing.svg" />
         </Container>
       </div>
     </Container>

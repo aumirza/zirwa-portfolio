@@ -4,12 +4,12 @@ import TitleLine from "./title-line";
 
 const HiFidelitySection = () => {
   return (
-    <Container className="flex flex-col items-center justify-center gap-10">
+    <Container className="flex flex-col items-center justify-center gap-5">
       <div className="grid grid-cols-12 grid-rows-1">
         <div className="hidden md:col-start-1 md:col-end-7 md:row-start-1  sm:flex flex-col items-center justify-start">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
             <img
-              className="relative  h-56 lg:h-72 object-cover"
+              className="relative w-[38vw] object-cover"
               alt=""
               src="/final01-1@2x.png"
             />
@@ -44,7 +44,7 @@ const HiFidelitySection = () => {
           </ScrollAnimation>
         </div>
       </div>
-      <img className="w-full max-w-4xl" alt="" src="/prototypes.gif" />
+      <img className="w-full max-w-4xl pb-10" alt="" src="/prototypes.gif" />
     </Container>
   );
 };

@@ -16,14 +16,10 @@ const Footer = () => {
           src="/group-1801.svg"
         />
       </div>
-      <div className="w-11/12 text-gray-600  flex h-full gap-10 justify-between items-center">
+      <Container className="text-gray-600  flex h-full gap-10 justify-between items-center">
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-1">
-            <img
-              className="h-4 md:h-5 max-w-full overflow-hidden max-h-full"
-              alt=""
-              src="/vector1.svg"
-            />
+            <img className="h-4 md:h-5" alt="" src="/copy.svg" />
 
             <div className="text-lg md:text-xl font-medium text-center whitespace-nowrap">
               2023 Zirwa Tariq
@@ -57,7 +53,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };

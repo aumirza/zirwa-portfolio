@@ -50,15 +50,18 @@ const DesignStrategySection: NextPage = () => {
             </ScrollAnimation>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-5 md:gap-20">
-          <DesignStrategyCard title="Empathize" image="/group-218.svg" />
-          <DesignStrategyCard title="Define" image="/group-219.svg" />
-          <DesignStrategyCard title="Ideate" image="/group-223.svg" />
-          <DesignStrategyCard title="Design" image="/group-226.svg" />
-          <DesignStrategyCard title="Prototype" image="/group-155.svg" />
-          <DesignStrategyCard title="Develop" image="/group-150.svg" />
-          <DesignStrategyCard title="Code Validation" image="/group-157.svg" />
-          <DesignStrategyCard title="User Testing" image="/group-153.svg" />
+        <div className="flex flex-wrap justify-center gap-5 md:gap-24">
+          <DesignStrategyCard title="Empathize" image="/empathize.svg" />
+          <DesignStrategyCard title="Define" image="/define.svg" />
+          <DesignStrategyCard title="Ideate" image="/ideate.svg" />
+          <DesignStrategyCard title="Design" image="/design.svg" />
+          <DesignStrategyCard title="Prototype" image="/prototype.svg" />
+          <DesignStrategyCard title="Develop" image="/develop.svg" />
+          <DesignStrategyCard
+            title="Code Validation"
+            image="/code-validation.svg"
+          />
+          <DesignStrategyCard title="User Testing" image="/user-testing.svg" />
         </div>
       </Container>
     </Container>

@@ -28,7 +28,7 @@ const ProjectGoalsSection = () => {
         </div>
 
         <div className="flex flex-col md:flex-row  gap-5 md:gap-20  justify-between  text-dimgray-400">
-          <div className="flex flex-col md:w-1/2 gap-2">
+          <div className="flex flex-col md:w-1/3 gap-2">
             <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
               <div>
                 <b className="text-15xl lg:text-21xl">
@@ -54,7 +54,7 @@ const ProjectGoalsSection = () => {
             </ScrollAnimation>
           </div>
 
-          <div className="flex flex-col md:w-1/2 gap-2">
+          <div className="flex flex-col md:w-1/3 gap-2">
             <ScrollAnimation
               animateIn="animate__fadeInRight"
               animateOnce={true}
