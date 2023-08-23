@@ -11,10 +11,10 @@ const HowSection = () => {
       </ScrollAnimation>
       <Container
         fluid
-        className="flex flex-col items-center justify-center mt-5 md:mt-0 gap-5 md:gap-0"
+        className="flex flex-col items-center justify-center mt-5 md:mt-0 gap-5"
       >
-        <div className="flex flex-col md:flex-row items-center justify-between gap-5 md:gap-10">
-          <div className="md:w-1/3">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-5 md:gap-10">
+          <div className="md:w-[35vw]">
             <ScrollAnimation
               className="flex flex-col gap-2"
               animateIn="animate__fadeInLeft"
@@ -47,18 +47,18 @@ const HowSection = () => {
             />
           </ScrollAnimation>
         </div>
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-5 md:gap-10">
+        <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between gap-5 md:gap-10">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
             <img
-              className="w-full md:w-[40vw]"
+              className="w-full md:w-[40vw] lg:w-[35vw]"
               alt=""
               src="/second-project-1@2x.png"
             />
           </ScrollAnimation>
 
-          <div className="md:w-1/3">
+          <div className="">
             <ScrollAnimation
-              className="flex flex-col gap-2"
+              className="flex flex-col gap-2 md:w-[35vw]"
               animateIn="animate__fadeInRight"
               animateOnce={true}
             >
