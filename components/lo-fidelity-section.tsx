@@ -5,7 +5,7 @@ import TitleLine from "./title-line";
 const LoFidelitySection = () => {
   return (
     <Container fluid className="flex flex-col items-center">
-      <Container className="flex flex-col-reverse md:flex-row justify-between  py-10 gap-10">
+      <Container className="flex flex-col-reverse md:flex-row justify-between gap-10">
         <ScrollAnimation
           className="flex justify-end"
           animateIn="animate__fadeInLeft"

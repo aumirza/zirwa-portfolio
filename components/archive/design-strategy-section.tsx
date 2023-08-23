@@ -29,9 +29,9 @@ const DesignStrategySection: NextPage = () => {
   return (
     <Container fluid className="flex flex-col items-center bg-bisque py-10">
       <Container className="flex flex-col items-center gap-5">
-        <div className="flex flex-col items-center justify-start gap-5">
+        <div className="flex flex-col md:items-center justify-start gap-5">
           <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
-            <div className="text-3xl md:text-5xl font-semibold">
+            <div className="text-3xl md:text-5xl font-semibold  text-gray-1100">
               Design Strategy
             </div>
           </ScrollAnimation>

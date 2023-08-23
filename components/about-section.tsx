@@ -26,15 +26,13 @@ const AboutSection = () => {
           </Card>
 
           <Card title="Audience">
-            <ul>
-              <li>Anyone who’s looking for a way to be more creative.</li>
-            </ul>
+            <p className="px-3">
+              Anyone who’s looking for a way to be more creative.
+            </p>
           </Card>
 
           <Card title="Timeline">
-            <ul>
-              <li>12 weeks to design and develop.</li>
-            </ul>
+            <p className="px-3">12 weeks to design and develop.</p>
           </Card>
 
           <Card title="Tools">

@@ -30,12 +30,10 @@ const ProjectGoalsSection = () => {
         <div className="flex flex-col md:flex-row  gap-5 md:gap-20  justify-between  text-dimgray-400">
           <div className="flex flex-col md:w-1/3 gap-2">
             <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
-              <div>
-                <b className="text-15xl lg:text-21xl">
-                  <p className="m-0">Play is </p>
-                  <p className="m-0">important</p>
-                </b>
-              </div>
+              <h3 className="text-xl font-semibold">
+                <p className="m-0">Play is </p>
+                <p className="m-0">important</p>
+              </h3>
 
               <div className="lg:text-lgi text-black  ">
                 <ul className="pl-5">
@@ -59,9 +57,9 @@ const ProjectGoalsSection = () => {
               animateIn="animate__fadeInRight"
               animateOnce={true}
             >
-              <b className="text-15xl lg:text-21xl">
-                21 days countdown to become creative{" "}
-              </b>
+              <h3 className="text-xl font-semibold">
+                21 days countdown to become creative
+              </h3>
               <div className="lg:text-lgi   text-black inline-block ">
                 The idea that it takes 21 days to develop a habit is a popular
                 concept. The significance of 21 days lies in establishing a

@@ -22,7 +22,7 @@ const WhatSection = () => {
   return (
     <Container className="flex flex-col items-center  text-gray-1400 font-case-study-2-h2">
       <div className="flex flex-col items-center justify-center gap-10">
-        <div className="flex flex-col items-center justify-center md:justify-start gap-3">
+        <div className="flex flex-col md:items-center justify-center md:justify-start gap-3">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
             <div className="text-3xl md:text-4xl font-bold">
               What is Art Archive?

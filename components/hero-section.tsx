@@ -27,11 +27,11 @@ const HeroSection = () => {
           </div>
         </ScrollAnimation>
         <ScrollAnimation
-          className="flex  items-end "
+          className="flex  items-end gap-1"
           animateIn="animate__fadeInRight"
           animateOnce={true}
         >
-          <div className="flex flex-col text-3xl md:text-4xl">
+          <div className="flex flex-col text-2xl md:text-3xl">
             <b>Play your way </b>
 
             <span className="text-3xl md:text-4xl lg:text-5xl font-black">

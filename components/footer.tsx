@@ -11,7 +11,7 @@ const Footer = () => {
         onClick={scrollToTop}
       >
         <img
-          className="h-10 overflow-hidden max-h-full"
+          className="h-10 lg:h-14 overflow-hidden max-h-full"
           alt=""
           src="/backtotop.png"
         />

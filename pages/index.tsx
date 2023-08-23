@@ -15,7 +15,7 @@ import ProductFeaturesSection from "../components/product-features";
 
 const Home: NextPage = () => {
   return (
-    <main className="flex flex-col items-center my-5 mx-auto bg-white text-gray-400 gap-10">
+    <main className="flex flex-col items-center my-5 mx-auto bg-white text-gray-400 gap-10 lg:gap-20">
       <HeroSection />
       <AboutSection />
       <ProjectGoalsSection />

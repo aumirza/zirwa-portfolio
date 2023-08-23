@@ -3,9 +3,9 @@ import Container from "../container";
 
 const HowSection = () => {
   return (
-    <Container className="flex flex-col items-center ">
+    <Container className="flex flex-col md:items-center ">
       <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-        <div className="relative text-xl font-bold text-gray-1200">
+        <div className="relative text-2xl font-bold text-gray-1200 md:pb-10">
           How this works
         </div>
       </ScrollAnimation>
@@ -13,8 +13,8 @@ const HowSection = () => {
         fluid
         className="flex flex-col items-center justify-center mt-5 md:mt-0 gap-5"
       >
-        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-5 md:gap-10">
-          <div className="md:w-[35vw]">
+        <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between gap-5 md:gap-10">
+          <div className="md:w-[40vw] lg:w-[35vw]">
             <ScrollAnimation
               className="flex flex-col gap-2"
               animateIn="animate__fadeInLeft"
@@ -47,7 +47,7 @@ const HowSection = () => {
             />
           </ScrollAnimation>
         </div>
-        <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between gap-5 md:gap-10">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-5 md:gap-10">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
             <img
               className="w-full md:w-[40vw] lg:w-[35vw]"
@@ -56,9 +56,9 @@ const HowSection = () => {
             />
           </ScrollAnimation>
 
-          <div className="">
+          <div className="md:w-[40vw] lg:w-[35vw]">
             <ScrollAnimation
-              className="flex flex-col gap-2 md:w-[35vw]"
+              className="flex flex-col gap-2"
               animateIn="animate__fadeInRight"
               animateOnce={true}
             >

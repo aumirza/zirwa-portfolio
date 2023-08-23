@@ -3,13 +3,13 @@ import Container from "../container";
 
 const Conclusion1 = () => {
   return (
-    <Container className="pb-14 flex justify-center">
+    <Container className="pb-20 md:pb-48 flex justify-center">
       <ScrollAnimation
-        className="md:w-3/5 flex flex-col items-center justify-center "
+        className="md:w-3/5 flex flex-col md:items-center justify-center"
         animateIn="animate__fadeIn"
         animateOnce={true}
       >
-        <div className="font-black text-xl">Conclusion</div>
+        <div className="font-black text-2xl text-gray-1100">Conclusion</div>
         <div className="">
           The case study of Art Archive highlights the transformative power of
           QR codes in enhancing the user experience of an art-focused website.

@@ -8,18 +8,20 @@ const MobileCenteredDesignSection = () => {
       className="flex flex-col py-5 items-center justify-center text-gray-1400"
     >
       <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-        <div className="text-center">
-          <span className="font-medium ">What made this web experience</span>
+        <div className="text-center pb-5  text-gray-1100">
+          <span className="text-xl md:text-2xl font-semibold">
+            What made this web experience
+          </span>
           <br />
-          <span className="text-xl font-semibold">
+          <span className="text-2xl md:text-3xl font-bold">
             interesting & user friendly
           </span>
         </div>
       </ScrollAnimation>
 
       <Container className="flex flex-col text-saddlebrown-200 mt-5 md:mt-0 gap-5 md:gap-0">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-5 md:gap-20">
-          <div className="md:w-1/3">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-5 md:gap-20">
+          <div className="md:w-5/12 lg:w-1/3">
             <ScrollAnimation
               className="flex flex-col gap-2"
               animateIn="animate__fadeInLeft"
@@ -39,12 +41,12 @@ const MobileCenteredDesignSection = () => {
             <img className="w-full md:w-[33vw]" src="/centered.png" alt="" />
           </ScrollAnimation>
         </div>
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-5 md:gap-20 md:-mt-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5 md:gap-20 md:-mt-10">
           <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
             <img className="w-full md:w-[28vw]" alt="" src="/read-more.png" />
           </ScrollAnimation>
 
-          <div className="md:w-1/3">
+          <div className="md:w-5/12 lg:w-1/3">
             <ScrollAnimation
               className="flex flex-col gap-2"
               animateIn="animate__fadeInRight"
@@ -61,8 +63,8 @@ const MobileCenteredDesignSection = () => {
             </ScrollAnimation>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-between gap-5 md:gap-20 md:-mt-10">
-          <div className="md:w-1/3">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-5 md:gap-20 md:-mt-10">
+          <div className="md:w-5/12 lg:w-1/3">
             <ScrollAnimation
               className="flex flex-col gap-2"
               animateIn="animate__fadeInLeft"
