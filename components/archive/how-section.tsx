@@ -62,11 +62,11 @@ const HowSection = () => {
               animateIn="animate__fadeInRight"
               animateOnce={true}
             >
-              <div className="font-extrabold inline-block">
+              <div className="font-extrabold text-saddlebrown-200">
                 Provide accurate and concise information
               </div>
               <div className="">
-                <p>
+                <p className="m-0">
                   By offering concise and accurate information accompanied by
                   visuals, users can better understand the content and navigate
                   through the webpage with ease. This approach ensures that
