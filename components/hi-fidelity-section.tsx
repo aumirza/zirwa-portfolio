@@ -11,7 +11,7 @@ const HiFidelitySection = () => {
             <img
               className="relative w-[38vw] object-cover"
               alt=""
-              src="/final01-1@2x.png"
+              src="/hi-fid.png"
             />
             <div className="font-semibold text-gray-100">
               Display of website on different screens

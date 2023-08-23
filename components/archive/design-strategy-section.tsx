@@ -13,7 +13,7 @@ const DesignStrategyCard = ({
     <div className="text-center">
       <ScrollAnimation animateIn="animate__fadeInDown" animateOnce={true}>
         <img
-          className="w-[4.5rem] h-[4.5rem] md:h-32 md:w-32"
+          className="w-[4.5rem] h-[4.5rem] md:h-32 md:w-32 invert-[17%] sepia-[95%] saturate-[350%] hue-rotate-[347deg] brightness-[80%] contrast-[88%]"
           alt=""
           src={image}
         />

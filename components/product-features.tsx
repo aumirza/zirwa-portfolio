@@ -56,7 +56,7 @@ const ProductFeaturesSection = () => {
               className="md:w-1/3"
             >
               <p className="text-xl md:hidden mb-0">2</p>
-              <p>
+              <p className="m-0">
                 A calendar page helps the user to keep track of activities and
                 an easy access to all the activity pages from one page.
               </p>
@@ -70,7 +70,7 @@ const ProductFeaturesSection = () => {
             >
               <p className="text-xl md:hidden mb-0">3</p>
 
-              <p>
+              <p className="m-0">
                 A music feature is also incorporated to the website for the
                 users who prefer to play music while working. Images are also
                 provided to give the visual aid and Hint feature is also
@@ -95,11 +95,11 @@ const ProductFeaturesSection = () => {
             >
               <p className="text-xl md:hidden mb-0">4</p>
 
-              <div>
+              <p className="m-0">
                 A daily email reminder for the users to provide them a sneak
                 peak about the activity and keep them engaged to the countdown
                 experience.
-              </div>
+              </p>
             </ScrollAnimation>
           </div>
         </div>
