@@ -13,7 +13,7 @@ const Footer = () => {
         <img
           className="h-10 overflow-hidden max-h-full"
           alt=""
-          src="/group-1801.svg"
+          src="/backtotop.png"
         />
       </div>
       <Container className="text-gray-600  flex h-full gap-10 justify-between items-center">
@@ -25,12 +25,16 @@ const Footer = () => {
               2023 Zirwa Tariq
             </div>
           </div>
-          <div className="">
-            <img
-              className="h-5 md:h-8 max-w-full overflow-hidden max-h-full"
-              alt=""
-              src="/icons2.svg"
-            />
+          <div className="flex gap-1">
+            <a href="http://">
+              <img className="h-5 md:h-8" alt="" src="/instagram.png" />
+            </a>
+            <a href="http://">
+              <img className="h-5 md:h-8" alt="" src="/linked-in.png" />
+            </a>
+            <a href="http://">
+              <img className="h-5 md:h-8" alt="" src="/behance.png" />
+            </a>
           </div>
 
           <div className="md:hidden text-lg">Lets Connect</div>
