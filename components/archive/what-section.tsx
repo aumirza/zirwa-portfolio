@@ -45,7 +45,7 @@ const WhatSection = () => {
             animateOnce={true}
           >
             <WhatCard title="Project Statement">
-              <p>
+              <p className="m-0">
                 In today's art world, there is a significant lack of accessible
                 and comprehensive information about artworks, hindering
                 individuals' ability to fully engage with and appreciate
@@ -92,7 +92,7 @@ const WhatSection = () => {
             animateOnce={true}
           >
             <WhatCard title="Project Goals">
-              <p>
+              <p className="m-0">
                 To create an immersive art exploration experience that goes
                 beyond a traditional website. By scanning the QR code associated
                 with an artwork, users will not only receive information about
