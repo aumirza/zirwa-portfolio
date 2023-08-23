@@ -38,7 +38,7 @@ const WhatSection = () => {
             </div>
           </ScrollAnimation>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-5  gap-10 gap-x-20">
+        <div className="grid grid-cols-2 md:grid-cols-5  gap-y-10 md:gap-x-20">
           <ScrollAnimation
             className="col-span-2"
             animateIn="animate__fadeInRight"
@@ -128,7 +128,7 @@ const WhatSection = () => {
                 <li>Figma </li>
                 <li>Illustrator </li>
                 <li>Photoshop</li>
-                <li>HTML/CSS/JavaScript</li>
+                <li>HTML/ CSS/ JavaScript</li>
               </ul>
             </WhatCard>
           </ScrollAnimation>
