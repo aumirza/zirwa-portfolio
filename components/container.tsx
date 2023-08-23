@@ -11,7 +11,6 @@ const Container: FC<
   return (
     <div
       className={
-        "overflow-hidden " +
         (!fluid ? "w-11/12 lg:w-10/12" : "w-full") +
         " " +
         (maxW ? screenSize[maxW] : screenSize["xl"]) +

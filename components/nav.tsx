@@ -1,6 +1,29 @@
 import { useState } from "react";
 import ActiveLink from "./active-link";
 
+const NavLink = ({
+  text,
+  link,
+  className,
+}: {
+  text: string;
+  link: string;
+  className?: string;
+}) => {
+  return (
+    <ActiveLink
+      className={
+        "text-white md:text-dimgray-600 no-underline hover:border-solid border-b-4 hover:border-white md:hover:border-dimgray-100 " +
+        className
+      }
+      activeClassName="border-solid md:border-dimgray-100 border-white "
+      href={link}
+    >
+      <b>{text}</b>
+    </ActiveLink>
+  );
+};
+
 const NavItem = ({
   text,
   link,
@@ -10,28 +33,6 @@ const NavItem = ({
   link: string;
   subNav?: any;
 }) => {
-  const NavLink = ({
-    text,
-    link,
-    className,
-  }: {
-    text: string;
-    link: string;
-    className?: string;
-  }) => {
-    return (
-      <ActiveLink
-        className={
-          "text-white md:text-dimgray-600 no-underline hover:border-solid border-b-4 hover:border-white md:hover:border-dimgray-100 " +
-          className
-        }
-        activeClassName="border-solid md:border-dimgray-100 border-white"
-        href={link}
-      >
-        <b>{text}</b>
-      </ActiveLink>
-    );
-  };
   return (
     <div className="flex gap-3 md:gap-1 md:items-center group">
       <NavLink className="text-xl" text={text} link={link} />
@@ -44,7 +45,7 @@ const NavItem = ({
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-5 h-5 text-white md:text-dimgray-600"
+              className="w-5 h-5 text-white md:text-dimgray-600 cursor-pointer"
             >
               <path
                 strokeLinecap="round"
